@@ -10,4 +10,5 @@ void main() {
     home: Text('Hi there!'),
   );
   // Take that widget and get it on the screen
+  runApp(app);
 }
