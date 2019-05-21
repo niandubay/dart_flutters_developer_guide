@@ -12,7 +12,10 @@ class App extends StatefulWidget {
 class AppState extends State<App> {
   int counter = 0;
 
-  void fetchImage() {}
+  void fetchImage() {
+    counter++;
+    get('https://jsonplaceholder.typicode.com/photos/$counter');
+  }
 
   Widget build(context) {
     return MaterialApp(
