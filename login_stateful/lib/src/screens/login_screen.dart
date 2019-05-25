@@ -39,6 +39,11 @@ class LoginScreenState extends State<LoginScreen> {
         labelText: 'Email Address',
         hintText: 'you@example.com',
       ),
+      validator: () {
+        // return null if valid
+        // otherwise string (with the error message) if invalid
+        return null;
+      },
     );
   }
 
